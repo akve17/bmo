@@ -96,5 +96,6 @@
     [% IF id %] id="[% id FILTER html %]" [% END %]
     [% IF mandatory %] required [% END %]
     [% IF multiple %] data-multiple="1" [% END %]
+    [% IF aria_labelledby %]aria-labelledby="[% name FILTER html %]"[% END %]
   >
 [% END %]
